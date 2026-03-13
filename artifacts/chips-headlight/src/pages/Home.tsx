@@ -45,7 +45,7 @@ export default function Home() {
 
           {/* Logo: centered on mobile, left-aligned on desktop */}
           <a href="#home" className="justify-self-center lg:justify-self-start z-50 hover:opacity-90 transition-opacity">
-            <Logo size="sm" id="header" />
+            <Logo size="lg" id="header" />
           </a>
 
           {/* Desktop Nav */}
@@ -118,28 +118,28 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 mx-auto px-4 md:px-6 pt-4 pb-4">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl mx-auto text-center">
             <Reveal direction="up" delay={0.1}>
-              <Badge className="bg-white/10 text-white hover:bg-white/20 border-white/20 mb-6 backdrop-blur-md px-4 py-1.5 text-sm">
+              <Badge className="bg-white/10 text-white hover:bg-white/20 border-white/20 mb-6 backdrop-blur-md px-4 py-1.5 text-sm inline-flex">
                 <MapPin className="w-3.5 h-3.5 mr-2 text-primary" />
                 Mobile Service • We Come To You
               </Badge>
             </Reveal>
             
             <Reveal direction="up" delay={0.2}>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] mb-6">
+              <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6">
                 Restore Cloudy Headlights in <span className="text-gradient-primary">Under an Hour</span>
               </h1>
             </Reveal>
 
             <Reveal direction="up" delay={0.3}>
-              <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Professional mobile headlight restoration that comes directly to your home or workplace. Dramatically improve your nighttime visibility and vehicle appearance.
               </p>
             </Reveal>
 
             <Reveal direction="up" delay={0.4}>
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
                 <Button asChild size="lg" className="rounded-xl h-14 px-8 text-lg font-bold shadow-xl shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-1 transition-all">
                   <a href={TEL_LINK}>
                     <Phone className="w-5 h-5 mr-2" />
@@ -155,7 +155,7 @@ export default function Home() {
             </Reveal>
 
             <Reveal direction="up" delay={0.5}>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-white/10 pt-8">
+              <div className="flex flex-col sm:flex-row justify-center gap-6 border-t border-white/10 pt-8">
                 {[
                   "Safer Night Driving",
                   "Fraction of Replacement Cost",
