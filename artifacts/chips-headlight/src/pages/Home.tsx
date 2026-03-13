@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Reveal } from "@/components/reveal";
+import { Logo } from "@/components/Logo";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,13 +39,8 @@ export default function Home() {
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <a href="#home" className="flex flex-col z-50 relative group">
-            <span className="font-display font-black text-2xl md:text-3xl tracking-tight text-white group-hover:text-primary transition-colors">
-              CHIP'S
-            </span>
-            <span className="text-[0.65rem] md:text-xs font-semibold text-primary uppercase tracking-[0.2em] -mt-1">
-              Headlight Restoration
-            </span>
+          <a href="#home" className="z-50 relative hover:opacity-90 transition-opacity">
+            <Logo size="sm" id="header" />
           </a>
 
           {/* Desktop Nav */}
@@ -607,13 +603,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             
             <div className="lg:col-span-2">
-              <a href="#home" className="flex flex-col mb-6">
-                <span className="font-display font-black text-3xl tracking-tight text-white">
-                  CHIP'S
-                </span>
-                <span className="text-sm font-semibold text-primary uppercase tracking-[0.2em] -mt-1">
-                  Mobile Headlight Restoration
-                </span>
+              <a href="#home" className="inline-flex mb-6 hover:opacity-90 transition-opacity">
+                <Logo size="md" id="footer" />
               </a>
               <p className="text-white/60 max-w-md leading-relaxed mb-6">
                 Professional, mobile headlight restoration bringing safety and clarity right to your driveway. We restore what others tell you to replace.
