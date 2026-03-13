@@ -147,8 +147,8 @@ export default function Home() {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-xl h-14 px-8 text-lg font-semibold bg-white/5 border-white/20 hover:bg-white/10 text-white backdrop-blur-sm">
-                  <a href="#services">
-                    See How It Works
+                  <a href="#gallery">
+                    See the Difference
                   </a>
                 </Button>
               </div>
