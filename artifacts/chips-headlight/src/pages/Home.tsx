@@ -411,7 +411,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild variant="outline" className="w-full border-white/20 hover:bg-white/10 text-white">
-                    <a href={TEL_LINK}>Book Now</a>
+                    <a href={TEL_LINK}>Call for Quote</a>
                   </Button>
                 </CardFooter>
               </Card>
