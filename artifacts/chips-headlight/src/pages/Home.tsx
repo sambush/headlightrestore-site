@@ -250,8 +250,11 @@ export default function Home() {
               <Reveal key={i} direction="up" delay={i * 0.1}>
                 <Card className="bg-background/50 border-white/5 relative z-10 h-full group hover:border-primary/30 transition-colors">
                   <CardHeader>
-                    <div className="w-16 h-16 rounded-2xl bg-card border border-white/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors">
+                    <div className="relative w-16 h-16 rounded-2xl bg-card border border-white/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors">
                       <step.icon className="w-7 h-7 text-white/50 group-hover:text-primary transition-colors" />
+                      <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-primary text-white text-[10px] font-black flex items-center justify-center shadow-md">
+                        {i + 1}
+                      </span>
                     </div>
                     <CardTitle className="text-xl text-white">{step.title}</CardTitle>
                   </CardHeader>
