@@ -39,22 +39,22 @@ export default function Home() {
             : "bg-transparent border-transparent py-1"
         }`}
       >
-        <div className="container mx-auto px-4 md:px-6 grid grid-cols-3 items-center">
-          {/* Left col: empty on mobile, hidden on desktop (nav takes right col) */}
+        <div className="container mx-auto px-4 md:px-6 grid grid-cols-3 lg:flex lg:justify-between items-center">
+          {/* Mobile-only left spacer */}
           <div className="lg:hidden" />
 
-          {/* Center col: Logo */}
-          <a href="#home" className="justify-self-center z-50 hover:opacity-90 transition-opacity">
-            <Logo size="lg" id="header" />
+          {/* Logo: centered on mobile, left-aligned on desktop */}
+          <a href="#home" className="justify-self-center lg:justify-self-start z-50 hover:opacity-90 transition-opacity">
+            <Logo size="sm" id="header" />
           </a>
 
-          {/* Desktop Nav — spans right col */}
-          <nav className="hidden lg:flex items-center gap-8 justify-self-end">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center gap-6">
             {["Services", "Gallery", "Pricing", "About"].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors hover:glow"
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors"
               >
                 {item}
               </a>
