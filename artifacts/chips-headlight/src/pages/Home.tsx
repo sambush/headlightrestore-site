@@ -158,7 +158,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-white/10 pt-8">
                 {[
                   "Safer Night Driving",
-                  "Save 100s vs Replacement",
+                  "Fraction of Replacement Cost",
                   "Done in 60 Minutes"
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-center gap-3">
