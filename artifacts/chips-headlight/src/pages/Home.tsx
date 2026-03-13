@@ -39,17 +39,17 @@ export default function Home() {
             : "bg-transparent border-transparent py-5"
         }`}
       >
-        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
-          {/* Left: balancing spacer on mobile (same width as hamburger), hidden on desktop */}
-          <div className="lg:hidden w-10 shrink-0" />
+        <div className="container mx-auto px-4 md:px-6 grid grid-cols-3 items-center">
+          {/* Left col: empty on mobile, hidden on desktop (nav takes right col) */}
+          <div className="lg:hidden" />
 
-          {/* Logo — centered absolutely on all screen sizes */}
-          <a href="#home" className="absolute left-1/2 -translate-x-1/2 z-50 hover:opacity-90 transition-opacity">
+          {/* Center col: Logo */}
+          <a href="#home" className="justify-self-center z-50 hover:opacity-90 transition-opacity">
             <Logo size="lg" id="header" />
           </a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8 ml-auto">
+          {/* Desktop Nav — spans right col */}
+          <nav className="hidden lg:flex items-center gap-8 justify-self-end">
             {["Services", "Gallery", "Pricing", "About"].map((item) => (
               <a 
                 key={item} 
@@ -68,7 +68,7 @@ export default function Home() {
           </nav>
 
           {/* Mobile Nav Toggle */}
-          <div className="lg:hidden z-50">
+          <div className="lg:hidden z-50 justify-self-end">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
