@@ -36,11 +36,10 @@ export function Logo({ size = "md" }: LogoProps) {
         const min = Math.min(r, g, b);
         const diff = max - min;
 
-        // Remove dark gray/charcoal background texture:
-        // - approximately grayscale (low color difference)
-        // - brightness above ~8 (keeps the pure-black HEADLAMP RESTORATION bar)
+        // Remove all dark background pixels (charcoal texture AND pure black bar):
+        // - approximately grayscale (low color difference between channels)
         // - brightness below ~75 (keeps bright logo colors: red, white, gold)
-        if (diff < 20 && max > 8 && max < 75) {
+        if (diff < 20 && max < 75) {
           data[i + 3] = 0;
         }
       }
