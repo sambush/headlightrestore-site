@@ -357,10 +357,8 @@ export default function Home() {
             {/* Popular Pricing */}
             <Reveal direction="up" delay={0.2}>
               <Card className="bg-gradient-to-b from-card to-background border-primary shadow-2xl shadow-primary/20 relative md:-my-4 scale-105 z-10">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <Badge className="bg-primary text-primary-foreground uppercase tracking-widest font-bold px-4 py-1">Most Popular</Badge>
-                </div>
-                <CardHeader className="pb-4 pt-8">
+                <CardHeader className="pb-4 pt-6">
+                  <Badge className="bg-primary text-primary-foreground uppercase tracking-widest font-bold px-4 py-1 w-fit mb-2">Most Popular</Badge>
                   <CardTitle className="text-2xl text-white">Two Headlights</CardTitle>
                   <div className="mt-4 flex items-baseline text-white">
                     <span className="text-6xl font-black tracking-tight text-primary">$50</span>
