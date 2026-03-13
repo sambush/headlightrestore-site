@@ -419,34 +419,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. WHY CHOOSE US */}
-      <section className="py-24 bg-background relative z-10">
-        <div className="container mx-auto px-4 md:px-6">
-          <Reveal direction="up">
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-16 text-center">Why Drivers Choose <span className="text-primary">Chip's</span></h2>
-          </Reveal>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: <MapPin />, title: "Convenient", desc: "We come directly to your location." },
-              { icon: <Zap />, title: "Fast", desc: "Most jobs completed in under 60 minutes." },
-              { icon: <Shield />, title: "Guaranteed", desc: "100% satisfaction or you don't pay." },
-              { icon: <CheckCircle />, title: "Affordable", desc: "Save hundreds compared to replacement." }
-            ].map((feature, i) => (
-              <Reveal key={i} direction="up" delay={i * 0.1}>
-                <div className="text-center p-6 rounded-2xl bg-card border border-white/5 hover:bg-white/5 transition-colors">
-                  <div className="w-14 h-14 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-white/60">{feature.desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 9. REVIEWS */}
       <section className="py-24 bg-card border-y border-white/5 relative z-10 overflow-hidden">
         {/* Decorative blur */}
