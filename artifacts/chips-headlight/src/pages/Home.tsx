@@ -542,13 +542,7 @@ export default function Home() {
 
       {/* 11. FINAL CTA BANNER */}
       <section className="relative py-32 overflow-hidden border-t border-primary/20">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={`${import.meta.env.BASE_URL}images/cta-bg.png`} 
-            alt="Abstract Background" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-background/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/20 via-background to-background">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </div>
         
