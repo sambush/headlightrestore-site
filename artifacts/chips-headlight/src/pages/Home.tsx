@@ -39,13 +39,17 @@ export default function Home() {
             : "bg-transparent border-transparent py-5"
         }`}
       >
-        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <a href="#home" className="z-50 relative hover:opacity-90 transition-opacity">
+        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
+          {/* Left: balancing spacer on mobile (same width as hamburger), hidden on desktop */}
+          <div className="lg:hidden w-10 shrink-0" />
+
+          {/* Logo — centered absolutely on all screen sizes */}
+          <a href="#home" className="absolute left-1/2 -translate-x-1/2 z-50 hover:opacity-90 transition-opacity">
             <Logo size="sm" id="header" />
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8 ml-auto">
             {["Services", "Gallery", "Pricing", "About"].map((item) => (
               <a 
                 key={item} 
