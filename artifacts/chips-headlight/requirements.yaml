@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For premium scroll reveal animations and smooth transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/chips-headlight/public/images/hero-bg.png"
+    description: "Dark, sleek automotive abstract background, subtle metallic charcoal textures with very faint electric blue lighting accents, moody, highly polished and professional"
+    aspect_ratio: "16:9"
+  - path: "artifacts/chips-headlight/public/images/cta-bg.png"
+    description: "Abstract dark charcoal background with vibrant electric blue light streaks and subtle carbon fiber texture"
+    aspect_ratio: "21:9"
+
+notes:
+  - Pure frontend single-page application.
+  - No backend API integration required.
+  - Relies on smooth scrolling for navigation.

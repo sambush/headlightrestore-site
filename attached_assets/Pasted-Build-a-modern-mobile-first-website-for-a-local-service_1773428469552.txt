@@ -1,0 +1,169 @@
+Build a modern, mobile-first website for a local service business called "Chip's Mobile Headlight Restoration."
+
+The website should feel professional, trustworthy, clean, and conversion-focused. The business provides mobile headlight restoration service and comes to the customer’s home or workplace.
+
+Overall goals:
+- Generate phone calls
+- Generate appointment requests
+- Showcase before/after results
+- Make the business look modern and credible
+- Work extremely well on mobile
+
+Style and branding:
+- Clean automotive style
+- Dark charcoal, white, and blue color palette
+- Bright accent color for call-to-action buttons
+- Modern typography
+- Rounded cards, soft shadows, clean spacing
+- High-end local service feel
+- Mobile-first responsive design
+- Sticky header
+- Sticky mobile call button
+
+Business info:
+Business name: Chip's Mobile Headlight Restoration
+Owner: Chip Bush
+Phone: 502-905-5192
+
+Navigation:
+- Home
+- Services
+- Gallery
+- Pricing
+- About
+- Contact
+
+Primary CTA everywhere:
+- Call Now: 502-905-5192
+- Book Appointment
+
+Build the following sections on the homepage:
+
+1. Header / Navigation
+- Sticky header
+- Logo on left
+- Nav links on right
+- Prominent "Call Now" button with phone number
+- On mobile, use hamburger menu and floating call button
+
+2. Hero Section
+- Large hero area with strong visual automotive feel
+- Headline: "Restore Cloudy Headlights in Under an Hour"
+- Subheadline: "Professional mobile headlight restoration that comes directly to your home or workplace."
+- 3 short benefit bullets:
+  - Safer Night Driving
+  - Save Hundreds vs Replacement
+  - Most Jobs Completed in 60 Minutes
+- Primary CTA button: "Get a Quote"
+- Secondary CTA button: "Call 502-905-5192"
+
+3. Before and After Section
+- Make this a very prominent visual section
+- Include a before/after image comparison slider if possible
+- If slider is not possible, use side-by-side before and after cards
+- Title: "See the Difference"
+- Supporting text: "Our professional restoration removes oxidation and restores crystal-clear headlights."
+- Add button: "View More Transformations"
+
+4. How It Works Section
+- Title: "Our Professional Restoration Process"
+- Show 6 simple steps in cards or icon blocks:
+  1. Deep Cleaning
+  2. Surface Sanding
+  3. Progressive Refinement
+  4. Polishing
+  5. UV Protection Seal
+  6. Final Inspection
+- Add supporting text: "Most restorations are completed in less than one hour."
+
+5. Services Section
+- Title: "Mobile Headlight Restoration Service"
+- Intro text: "We come directly to your home or workplace, saving you time and hassle."
+- Create 3 service cards:
+  - Mobile Headlight Restoration: Professional headlight restoration at your location
+  - Fleet Service: Service available for dealerships and fleet vehicles
+  - Commercial Trucks: Restoration available for trucks and work vehicles
+- CTA button: "Schedule Service"
+
+6. Pricing Section
+- Title: "Simple Transparent Pricing"
+- Clean pricing cards or pricing table
+- Prices:
+  - Single Headlight — $25
+  - Two Headlights — $45
+  - Semi Trucks / Commercial Vehicles — Prices Vary
+- Under pricing include:
+  - Mobile Service
+  - Complete Restoration
+  - Protective Finish
+  - Satisfaction Guarantee
+- CTA button: "Book Appointment"
+
+7. Why Choose Us Section
+- Title: "Why Drivers Choose Chip's"
+- 4 cards with icons:
+  - Convenient — We come directly to your location
+  - Affordable — Save hundreds compared to headlight replacement
+  - Fast — Most restorations completed in under an hour
+  - Guaranteed — 100% satisfaction or you don't pay
+
+8. Reviews Section
+- Title: "What Customers Are Saying"
+- Create a clean testimonial section with 3 sample reviews and 5-star styling
+- Use placeholder review text for now
+
+9. Service Area Section
+- Title: "Mobile Service Near You"
+- Text: "Chip's Mobile Headlight Restoration serves drivers throughout the local area with convenient mobile service."
+- Mention:
+  - Louisville
+  - Southern Indiana
+  - Surrounding communities
+- CTA: "Call Now to Check Availability"
+
+10. About Section
+- Title: "About Chip's Mobile Headlight Restoration"
+- Text should explain that the company provides professional mobile headlight restoration and focuses on improving safety, visibility, and saving customers money compared to replacement
+- Show:
+  - Chip Bush
+  - Owner & Technician
+
+11. Final CTA Section
+- Large banner near bottom
+- Headline: "Drive Safer Tonight"
+- Text: "Restore your headlights today and dramatically improve nighttime visibility."
+- Buttons:
+  - Call 502-905-5192
+  - Book Appointment
+
+12. Footer
+- Quick links
+- Contact information
+- Phone number
+- Quick facts:
+  - Mobile service available
+  - 100% satisfaction or no charge
+  - Most jobs completed in 60 minutes
+- Optional social links placeholders
+
+Technical requirements:
+- Responsive and mobile-first
+- Clean modern layout
+- Smooth scrolling
+- Accessible color contrast
+- Fast loading
+- Reusable components
+- Use modern UI patterns
+- Include placeholder image areas for before/after photos
+- Optimize layout for local service conversions
+- Make buttons prominent and easy to tap on mobile
+- Add a floating mobile call button
+- Add strong spacing and visual hierarchy
+- Build this as a polished single-page website
+
+Important:
+- Do not make it look outdated
+- Do not use small text or cramped spacing
+- Do not make it feel like an old local business website
+- Make it look like a premium modern service brand
+- Prioritize conversions and mobile usability over fancy effects
