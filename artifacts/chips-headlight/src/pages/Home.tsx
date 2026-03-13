@@ -570,7 +570,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             
             <div className="lg:col-span-2">
-              <a href="#home" className="inline-flex mb-6 hover:opacity-90 transition-opacity">
+              <a href="#home" className="flex justify-center mb-6 hover:opacity-90 transition-opacity">
                 <Logo size="md" id="footer" />
               </a>
               <p className="text-white/60 max-w-md leading-relaxed mb-6">
