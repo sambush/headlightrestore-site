@@ -240,7 +240,7 @@ export default function Home() {
               { title: "Surface Sanding", desc: "Removal of the dead, oxidized factory clear coat layer.", icon: Layers },
               { title: "Progressive Refinement", desc: "Multiple stages of wet sanding to smooth the plastic surface.", icon: Gauge },
               { title: "Polishing", desc: "High-speed machine compounding to restore perfect optical clarity.", icon: Sparkles },
-              { title: "UV Protection", desc: "Application of a professional-grade ceramic UV sealant.", icon: ShieldCheck },
+              { title: "UV Protection", desc: "Application of a professional-grade premium UV sealant.", icon: ShieldCheck },
               { title: "Final Inspection", desc: "Quality check to ensure 100% satisfaction before you pay.", icon: Eye }
             ].map((step, i) => (
               <Reveal key={i} direction="up" delay={i * 0.1}>
@@ -366,7 +366,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-4">
-                    {["Mobile Service to You", "Complete Mechanical Restoration", "Premium Ceramic UV Sealant", "100% Satisfaction Guarantee"].map((item, i) => (
+                    {["Mobile Service to You", "Complete Mechanical Restoration", "Premium UV Sealant", "100% Satisfaction Guarantee"].map((item, i) => (
                       <li key={i} className="flex items-center text-white/90 font-medium">
                         <CheckCircle className="w-5 h-5 mr-3 text-primary fill-primary/20" /> {item}
                       </li>
