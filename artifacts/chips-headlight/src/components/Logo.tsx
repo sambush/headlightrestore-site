@@ -16,16 +16,21 @@ export function Logo({ size = "md" }: LogoProps) {
 
     const img = new Image();
     img.onload = () => {
+      const dpr = window.devicePixelRatio || 1;
       const aspect = img.naturalWidth / img.naturalHeight;
       const w = Math.round(h * aspect);
-      canvas.width = w;
-      canvas.height = h;
+
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      canvas.style.width = `${w}px`;
+      canvas.style.height = `${h}px`;
 
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
+      ctx.scale(dpr, dpr);
       ctx.drawImage(img, 0, 0, w, h);
 
-      const imageData = ctx.getImageData(0, 0, w, h);
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const data = imageData.data;
 
       for (let i = 0; i < data.length; i += 4) {
@@ -36,9 +41,6 @@ export function Logo({ size = "md" }: LogoProps) {
         const min = Math.min(r, g, b);
         const diff = max - min;
 
-        // Remove all dark background pixels (charcoal texture AND pure black bar):
-        // - approximately grayscale (low color difference between channels)
-        // - brightness below ~75 (keeps bright logo colors: red, white, gold)
         if (diff < 20 && max < 75) {
           data[i + 3] = 0;
         }
