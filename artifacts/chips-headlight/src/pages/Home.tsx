@@ -45,7 +45,7 @@ export default function Home() {
 
           {/* Logo — centered absolutely on all screen sizes */}
           <a href="#home" className="absolute left-1/2 -translate-x-1/2 z-50 hover:opacity-90 transition-opacity">
-            <Logo size="sm" id="header" />
+            <Logo size="lg" id="header" />
           </a>
 
           {/* Desktop Nav */}
