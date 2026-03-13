@@ -184,36 +184,41 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {[1, 2].map((item) => (
-              <Reveal key={item} direction="up" delay={item * 0.1}>
-                <div className="group relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-card hover:border-primary/50 transition-colors duration-500">
-                  <div className="flex aspect-video sm:aspect-[16/7]">
-                    {/* Before Half */}
-                    <div className="w-1/2 relative bg-gradient-to-br from-amber-900/90 to-yellow-700/60 border-r border-white/10 flex flex-col justify-end p-4 md:p-6 overflow-hidden">
-                      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')] opacity-30"></div>
-                      <div className="absolute inset-0 bg-black/20"></div>
-                      <Badge variant="destructive" className="absolute top-4 left-4 z-10 font-bold tracking-wider">BEFORE</Badge>
-                      <p className="relative z-10 text-white/70 font-medium text-sm mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Heavy Oxidation & Yellowing</p>
-                    </div>
-                    {/* After Half */}
-                    <div className="w-1/2 relative bg-gradient-to-br from-white/60 to-slate-200/40 flex flex-col justify-end p-4 md:p-6 overflow-hidden">
-                      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent mix-blend-overlay"></div>
-                      <Badge className="absolute top-4 right-4 z-10 bg-primary font-bold tracking-wider">AFTER</Badge>
-                      <p className="relative z-10 text-white font-medium text-sm mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Crystal Clear Protection</p>
-                    </div>
-                  </div>
-                  {/* Slider visual hint */}
-                  <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-white/20 -translate-x-1/2 flex items-center justify-center">
-                    <div className="w-8 h-8 rounded-full bg-white shadow-lg flex items-center justify-center text-background">
-                      <ChevronRight className="w-4 h-4 mr-0.5" />
-                      <ChevronRight className="w-4 h-4 rotate-180 ml-0.5" />
-                    </div>
-                  </div>
+          <Reveal direction="up" delay={0.1}>
+            <div className="group relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl hover:border-primary/40 transition-colors duration-500 mb-12 max-w-4xl mx-auto">
+              <div className="flex" style={{ aspectRatio: "16/9" }}>
+                {/* Before Half */}
+                <div className="w-1/2 relative overflow-hidden border-r border-white/20">
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/before.png`}
+                    alt="Headlight before restoration — heavy oxidation and scratching"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-black/25" />
+                  <Badge variant="destructive" className="absolute top-4 left-4 z-10 font-bold tracking-widest text-sm shadow-lg">BEFORE</Badge>
+                  <p className="absolute bottom-4 left-4 z-10 text-white/90 font-semibold text-sm drop-shadow-lg">Heavy Oxidation & Scratching</p>
                 </div>
-              </Reveal>
-            ))}
-          </div>
+                {/* After Half */}
+                <div className="w-1/2 relative overflow-hidden">
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/after.png`}
+                    alt="Headlight after restoration — crystal clear"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-black/10" />
+                  <Badge className="absolute top-4 right-4 z-10 bg-primary font-bold tracking-widest text-sm shadow-lg">AFTER</Badge>
+                  <p className="absolute bottom-4 right-4 z-10 text-white font-semibold text-sm drop-shadow-lg text-right">Crystal Clear & Protected</p>
+                </div>
+              </div>
+              {/* Center divider */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/70 -translate-x-1/2 z-20 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-full bg-white shadow-xl flex items-center justify-center text-background shrink-0">
+                  <ChevronRight className="w-3.5 h-3.5 -mr-0.5" />
+                  <ChevronRight className="w-3.5 h-3.5 rotate-180 -ml-0.5" />
+                </div>
+              </div>
+            </div>
+          </Reveal>
 
           <Reveal direction="up" delay={0.3}>
             <div className="text-center">
