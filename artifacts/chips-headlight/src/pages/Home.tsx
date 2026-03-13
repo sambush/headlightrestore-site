@@ -368,7 +368,7 @@ export default function Home() {
                 <CardHeader className="pb-4 pt-8">
                   <CardTitle className="text-2xl text-white">Two Headlights</CardTitle>
                   <div className="mt-4 flex items-baseline text-white">
-                    <span className="text-6xl font-black tracking-tight text-primary">$45</span>
+                    <span className="text-6xl font-black tracking-tight text-primary">$50</span>
                     <span className="text-white/50 ml-2 font-medium">total</span>
                   </div>
                   <CardDescription className="text-white/60 mt-2">Complete front-end clarity restoration</CardDescription>
