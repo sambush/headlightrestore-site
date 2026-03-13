@@ -324,7 +324,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center py-6 overflow-visible">
             {/* Standard Pricing */}
             <Reveal direction="up" delay={0.1}>
               <Card className="bg-background border-white/10 relative">
@@ -353,8 +353,8 @@ export default function Home() {
             </Reveal>
 
             {/* Popular Pricing */}
-            <Reveal direction="up" delay={0.2}>
-              <Card className="bg-gradient-to-b from-card to-background border-primary shadow-2xl shadow-primary/20 relative md:-my-4 scale-105 z-10">
+            <Reveal direction="up" delay={0.2} className="overflow-visible">
+              <Card className="bg-gradient-to-b from-card to-background border-primary shadow-2xl shadow-primary/20 relative z-10">
                 <CardHeader className="pb-4 pt-6">
                   <Badge className="bg-primary text-primary-foreground uppercase tracking-widest font-bold px-4 py-1 w-fit mb-2">Most Popular</Badge>
                   <CardTitle className="text-2xl text-white">Two Headlights</CardTitle>
