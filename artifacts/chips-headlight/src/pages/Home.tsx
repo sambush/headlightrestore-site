@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { 
   Phone, CheckCircle, Star, MapPin, Clock, Shield, 
-  Zap, Truck, Car, Menu, X, ArrowRight, ChevronRight
+  Zap, Truck, Car, Menu, X, ArrowRight, ChevronRight,
+  Droplets, Layers, Gauge, Sparkles, ShieldCheck, Eye
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
@@ -239,18 +240,18 @@ export default function Home() {
             <div className="hidden lg:block absolute top-12 left-20 right-20 h-0.5 bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0 z-0"></div>
 
             {[
-              { title: "Deep Cleaning", desc: "Thorough removal of surface dirt and grime to prep the lens." },
-              { title: "Surface Sanding", desc: "Removal of the dead, oxidized factory clear coat layer." },
-              { title: "Progressive Refinement", desc: "Multiple stages of wet sanding to smooth the plastic surface." },
-              { title: "Polishing", desc: "High-speed machine compounding to restore perfect optical clarity." },
-              { title: "UV Protection", desc: "Application of a professional-grade ceramic UV sealant." },
-              { title: "Final Inspection", desc: "Quality check to ensure 100% satisfaction before you pay." }
+              { title: "Deep Cleaning", desc: "Thorough removal of surface dirt and grime to prep the lens.", icon: Droplets },
+              { title: "Surface Sanding", desc: "Removal of the dead, oxidized factory clear coat layer.", icon: Layers },
+              { title: "Progressive Refinement", desc: "Multiple stages of wet sanding to smooth the plastic surface.", icon: Gauge },
+              { title: "Polishing", desc: "High-speed machine compounding to restore perfect optical clarity.", icon: Sparkles },
+              { title: "UV Protection", desc: "Application of a professional-grade ceramic UV sealant.", icon: ShieldCheck },
+              { title: "Final Inspection", desc: "Quality check to ensure 100% satisfaction before you pay.", icon: Eye }
             ].map((step, i) => (
               <Reveal key={i} direction="up" delay={i * 0.1}>
                 <Card className="bg-background/50 border-white/5 relative z-10 h-full group hover:border-primary/30 transition-colors">
                   <CardHeader>
                     <div className="w-16 h-16 rounded-2xl bg-card border border-white/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors">
-                      <span className="font-display font-black text-2xl text-white/50 group-hover:text-primary transition-colors">0{i+1}</span>
+                      <step.icon className="w-7 h-7 text-white/50 group-hover:text-primary transition-colors" />
                     </div>
                     <CardTitle className="text-xl text-white">{step.title}</CardTitle>
                   </CardHeader>
