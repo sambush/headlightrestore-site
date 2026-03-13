@@ -184,41 +184,38 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <Reveal direction="up" delay={0.1}>
-            <div className="group relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl hover:border-primary/40 transition-colors duration-500 mb-12 max-w-4xl mx-auto">
-              <div className="flex" style={{ aspectRatio: "16/9" }}>
-                {/* Before Half */}
-                <div className="w-1/2 relative overflow-hidden border-r border-white/20">
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/before.png`}
-                    alt="Headlight before restoration — heavy oxidation and scratching"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-black/25" />
-                  <Badge variant="destructive" className="absolute top-4 left-4 z-10 font-bold tracking-widest text-sm shadow-lg">BEFORE</Badge>
-                  <p className="absolute bottom-4 left-4 z-10 text-white/90 font-semibold text-sm drop-shadow-lg">Heavy Oxidation & Scratching</p>
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {[
+              { before: "images/before.png", after: "images/after.png", beforeAlt: "Headlight before — heavy oxidation and scratching", afterAlt: "Headlight after — crystal clear", delay: 0.1 },
+              { before: "images/before2.png", after: "images/after2.png", beforeAlt: "Headlight before — heavy fogging and oxidation", afterAlt: "Headlight after — fully restored clarity", delay: 0.2 },
+            ].map(({ before, after, beforeAlt, afterAlt, delay }) => (
+              <Reveal key={before} direction="up" delay={delay}>
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl hover:border-primary/40 transition-colors duration-500">
+                  <div className="flex" style={{ aspectRatio: "4/3" }}>
+                    {/* Before Half */}
+                    <div className="w-1/2 relative overflow-hidden border-r border-white/20">
+                      <img src={`${import.meta.env.BASE_URL}${before}`} alt={beforeAlt} className="absolute inset-0 w-full h-full object-cover object-center" />
+                      <div className="absolute inset-0 bg-black/20" />
+                      <Badge variant="destructive" className="absolute top-3 left-3 z-10 font-bold tracking-widest text-xs shadow-lg">BEFORE</Badge>
+                    </div>
+                    {/* After Half */}
+                    <div className="w-1/2 relative overflow-hidden">
+                      <img src={`${import.meta.env.BASE_URL}${after}`} alt={afterAlt} className="absolute inset-0 w-full h-full object-cover object-center" />
+                      <div className="absolute inset-0 bg-black/10" />
+                      <Badge className="absolute top-3 right-3 z-10 bg-primary font-bold tracking-widest text-xs shadow-lg">AFTER</Badge>
+                    </div>
+                  </div>
+                  {/* Center divider */}
+                  <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/70 -translate-x-1/2 z-20 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-white shadow-xl flex items-center justify-center text-background shrink-0">
+                      <ChevronRight className="w-3 h-3 -mr-0.5" />
+                      <ChevronRight className="w-3 h-3 rotate-180 -ml-0.5" />
+                    </div>
+                  </div>
                 </div>
-                {/* After Half */}
-                <div className="w-1/2 relative overflow-hidden">
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/after.png`}
-                    alt="Headlight after restoration — crystal clear"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-black/10" />
-                  <Badge className="absolute top-4 right-4 z-10 bg-primary font-bold tracking-widest text-sm shadow-lg">AFTER</Badge>
-                  <p className="absolute bottom-4 right-4 z-10 text-white font-semibold text-sm drop-shadow-lg text-right">Crystal Clear & Protected</p>
-                </div>
-              </div>
-              {/* Center divider */}
-              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/70 -translate-x-1/2 z-20 flex items-center justify-center">
-                <div className="w-9 h-9 rounded-full bg-white shadow-xl flex items-center justify-center text-background shrink-0">
-                  <ChevronRight className="w-3.5 h-3.5 -mr-0.5" />
-                  <ChevronRight className="w-3.5 h-3.5 rotate-180 -ml-0.5" />
-                </div>
-              </div>
-            </div>
-          </Reveal>
+              </Reveal>
+            ))}
+          </div>
 
           <Reveal direction="up" delay={0.3}>
             <div className="text-center">
