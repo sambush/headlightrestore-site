@@ -7,7 +7,7 @@ interface LogoProps {
 
 export function Logo({ size = "md" }: LogoProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const heights: Record<string, number> = { sm: 72, md: 90, lg: 120 };
+  const heights: Record<string, number> = { sm: 96, md: 90, lg: 120 };
   const h = heights[size];
 
   useEffect(() => {
