@@ -117,7 +117,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-4 md:px-6 pt-12 pb-12">
+        <div className="container relative z-10 mx-auto px-4 md:px-6 pt-4 pb-12">
           <div className="max-w-3xl">
             <Reveal direction="up" delay={0.1}>
               <Badge className="bg-white/10 text-white hover:bg-white/20 border-white/20 mb-6 backdrop-blur-md px-4 py-1.5 text-sm">
