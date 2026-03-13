@@ -217,14 +217,6 @@ export default function Home() {
             ))}
           </div>
 
-          <Reveal direction="up" delay={0.3}>
-            <div className="text-center">
-              <Button variant="outline" className="rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white group">
-                Call for a Free Assessment 
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-          </Reveal>
         </div>
       </section>
 
