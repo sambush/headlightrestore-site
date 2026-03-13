@@ -143,7 +143,7 @@ export default function Home() {
                 <Button asChild size="lg" className="rounded-xl h-14 px-8 text-lg font-bold shadow-xl shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-1 transition-all">
                   <a href={TEL_LINK}>
                     <Phone className="w-5 h-5 mr-2" />
-                    Get a Free Quote
+                    Call Now
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-xl h-14 px-8 text-lg font-semibold bg-white/5 border-white/20 hover:bg-white/10 text-white backdrop-blur-sm">
