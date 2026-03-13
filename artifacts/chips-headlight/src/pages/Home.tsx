@@ -105,14 +105,14 @@ export default function Home() {
       </div>
 
       {/* 3. HERO SECTION */}
-      <section id="home" className="relative min-h-[100dvh] flex items-center pt-20 overflow-hidden">
+      <section id="home" className="relative flex items-start pt-20 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-4 md:px-6 pt-12 pb-24">
+        <div className="container relative z-10 mx-auto px-4 md:px-6 pt-12 pb-12">
           <div className="max-w-3xl">
             <Reveal direction="up" delay={0.1}>
               <Badge className="bg-white/10 text-white hover:bg-white/20 border-white/20 mb-6 backdrop-blur-md px-4 py-1.5 text-sm">
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* 4. BEFORE/AFTER SECTION */}
-      <section id="gallery" className="py-24 bg-background relative z-10">
+      <section id="gallery" className="py-12 bg-background relative z-10">
         <div className="container mx-auto px-4 md:px-6">
           <Reveal direction="up">
             <div className="text-center max-w-2xl mx-auto mb-16">
