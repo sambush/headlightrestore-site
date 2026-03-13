@@ -50,36 +50,36 @@
 }
 
 :root {
-  /* DARK CHARCOAL AUTOMOTIVE THEME */
-  --background: 224 71% 4%; /* Very dark navy/charcoal */
-  --foreground: 210 40% 98%;
+  /* DARK CHARCOAL AUTOMOTIVE THEME — Red accent */
+  --background: 0 0% 5%; /* Near-black neutral charcoal */
+  --foreground: 0 0% 97%;
   
-  --card: 222 47% 11%; /* Slightly lighter than bg */
-  --card-foreground: 210 40% 98%;
-  --card-border: 217 32% 17%;
+  --card: 0 0% 10%; /* Slightly lighter charcoal */
+  --card-foreground: 0 0% 97%;
+  --card-border: 0 0% 16%;
   
-  --popover: 222 47% 11%;
-  --popover-foreground: 210 40% 98%;
-  --popover-border: 217 32% 17%;
+  --popover: 0 0% 10%;
+  --popover-foreground: 0 0% 97%;
+  --popover-border: 0 0% 16%;
   
-  --primary: 221 83% 53%; /* Electric Blue */
-  --primary-foreground: 210 40% 98%;
+  --primary: 4 82% 47%; /* Red — matches logo C */
+  --primary-foreground: 0 0% 98%;
   
-  --secondary: 217 32% 17%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 0 0% 16%;
+  --secondary-foreground: 0 0% 97%;
   
-  --muted: 217 32% 17%;
-  --muted-foreground: 215 20% 65%;
+  --muted: 0 0% 16%;
+  --muted-foreground: 0 0% 60%;
   
-  --accent: 221 83% 53%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 4 82% 47%;
+  --accent-foreground: 0 0% 98%;
   
   --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 98%;
   
-  --border: 217 32% 17%;
-  --input: 217 32% 17%;
-  --ring: 221 83% 53%;
+  --border: 0 0% 16%;
+  --input: 0 0% 16%;
+  --ring: 4 82% 47%;
 
   --radius: 0.75rem;
 
@@ -123,6 +123,6 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70;
   }
   .text-gradient-primary {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-400;
   }
 }

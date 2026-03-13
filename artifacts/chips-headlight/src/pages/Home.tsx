@@ -197,7 +197,7 @@ export default function Home() {
                       <p className="relative z-10 text-white/70 font-medium text-sm mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Heavy Oxidation & Yellowing</p>
                     </div>
                     {/* After Half */}
-                    <div className="w-1/2 relative bg-gradient-to-br from-blue-500/80 to-cyan-300/40 flex flex-col justify-end p-4 md:p-6 overflow-hidden">
+                    <div className="w-1/2 relative bg-gradient-to-br from-white/60 to-slate-200/40 flex flex-col justify-end p-4 md:p-6 overflow-hidden">
                       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent mix-blend-overlay"></div>
                       <Badge className="absolute top-4 right-4 z-10 bg-primary font-bold tracking-wider">AFTER</Badge>
                       <p className="relative z-10 text-white font-medium text-sm mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Crystal Clear Protection</p>
@@ -520,7 +520,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-6 p-6 rounded-2xl bg-card border border-white/10">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-red-900 flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
                     <span className="font-display font-bold text-3xl text-white">CB</span>
                   </div>
                   <div>
