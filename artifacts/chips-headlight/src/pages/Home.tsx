@@ -35,8 +35,8 @@ export default function Home() {
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
           isScrolled 
-            ? "bg-background/80 backdrop-blur-xl border-white/10 py-3 shadow-lg" 
-            : "bg-transparent border-transparent py-5"
+            ? "bg-background/80 backdrop-blur-xl border-white/10 py-1 shadow-lg" 
+            : "bg-transparent border-transparent py-1"
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 grid grid-cols-3 items-center">
@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       {/* 3. HERO SECTION */}
-      <section id="home" className="relative flex items-start pt-20 overflow-hidden">
+      <section id="home" className="relative flex items-start pt-32 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
