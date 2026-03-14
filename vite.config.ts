@@ -4,10 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 const port = process.env.PORT ? Number(process.env.PORT) : 5173;
-const isProd = process.env.NODE_ENV === "production";
-
 export default defineConfig({
-  base: isProd ? "/headlightrestore-site/" : "/",
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
